@@ -1,37 +1,76 @@
 <!DOCTYPE html>
+<html lang="es"></html>
 <head>    
     <title>Mi Página Personal</title>
+    <link rel="icon" href="img/imgIcon.png" type="image/png">
+    <link rel="stylesheet" href="lib/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
-<body>
+<body class="bg">
     <!-- Cabecera -->
-    <header class="container-fluid">
-        <h1 class="text-center">Mi Página Personal</h1>
+    <header class="container-fluid" >
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand color" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active color" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link color" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle color" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <!-- Sección de Presentación -->
-    <div class="container-fluid">
+    <div class="container-fluid" style="background-image: url(img/flores.png);">
         <div class="row">
-            <div class="col">
-                <img src="img/WallpaperDISC.png" alt="Mi Foto" class="img-fluid rounded-circle">
+            <div class="col d-flex justify-content-center align-items-center">
+                <img src="img/me.png" alt="Mi Foto" class="img-fluid rounded-circle" width="200" height="175">
             </div>
             <div class="col">
+                <br>
+                <br>
+                <br>
                 <h2>¡Hola!</h2>
-                <p>Bienvenido a mi página personal. Soy Kelly, me gusta enseñar Ing de Sw a niñ@s y jóvenes. En esta página, compartiré información sobre mí.</p>
+                <p>Bienvenid@ a mi página personal. Soy Lucia, me gusta la ciencia, <br> la computacion y la fisica. En mi tiempo libre me gusta leer y también <br>me apasiona la música.</p>
             </div>
         </div>
         <div class="row">
-            <div class="col">
-                <h3>Habilidad 1</h3>
-                <p>Descripción de la Habilidad 1.</p>
+            <div class="col text-center">
+                <br>
+                <h2>Lucia Castillo</h2>
+                <h5>Estudios</h5>
+                <p>Universidad de Los Andes<br>Ingenieria de Sinstemas y Computacion </p>
+                <h5>Información Personal</h5>
+                <p>Edad: 19 años <br> </p>
             </div>
             <div class="col">
-                <h3>Habilidad 2</h3>
-                <p>Descripción de la Habilidad 2.</p>
+                
             </div>
         </div>
     </div>
-       
     
 </body>
 </html>
